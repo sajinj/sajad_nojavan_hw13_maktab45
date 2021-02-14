@@ -6,9 +6,11 @@ const path = require('path');
 app.use(express.static(path.join(__dirname, "public")))
 
 
+// app.use("/pages/1",express.static(path.join(__dirname, "public/pages")));
+
 
 app.get("/", function (req, res) {
-    res.send("node js express __ goto pages")
+    res.send("node js express __ goto pages/1 for example")
 });
 
 app.use("/pages", pages);
