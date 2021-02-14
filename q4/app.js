@@ -7,6 +7,7 @@ const path = require('path');
 var fs = require('fs');
 const bodyParser = require('body-parser');
 
+
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
@@ -17,7 +18,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 
 app.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname, 'public/login.html'))
+  res.send("hello express __ for user go to /user/getUser __ for get all users go to /admin/getAll Users")
 });
 
 app.use("/admin", admin);
