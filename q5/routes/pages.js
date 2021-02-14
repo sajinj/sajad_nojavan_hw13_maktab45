@@ -24,10 +24,5 @@ routes.get(`/2`, (req, res)=>{
     res.sendFile(path.join(pathStr, `page5.html`));
  });
 
-//  routes.get(`/:page`, (req, res)=>{
-//     res.sendFile(path.join(pathStr, `page${req.params.page}.html`));
-//  });
-
-
 module.exports = routes;
 
